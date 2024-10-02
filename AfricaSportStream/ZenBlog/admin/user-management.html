@@ -1,0 +1,535 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Dashboard - AfricaSportSteam</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/Screenshot from 2024-06-14 15-48-26.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  
+    <!-- =======================================================
+    * Template Name: NiceAdmin
+    * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    * Updated: Apr 20 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/Screenshot from 2024-06-14 15-48-26.png" alt="Logo">
+        <span class="d-none d-lg-block">Admin Page</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <!-- Notification Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <!-- Notification items go here -->
+          </ul><!-- End Notification Dropdown Items -->
+        </li><!-- End Notification Nav -->
+
+        <!-- Messages Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <!-- Message items go here -->
+          </ul><!-- End Messages Dropdown Items -->
+        </li><!-- End Messages Nav -->
+
+        <!-- Profile Dropdown -->
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Amani Mwangi</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Amani Mwangi</h6>
+              <span>Senior Sports Writer</span>
+            </li>
+            <!-- Profile dropdown items go here -->
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- Sidebar Section -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+       <!-- Sports Management -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#sports-management-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Sports Management</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="sports-management-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li><a href="notifications.html"><i class="bi bi-circle"></i><span>Notifications</span></a></li>
+          <li><a href="communications.html"><i class="bi bi-circle"></i><span>Communications</span></a></li>
+          <li><a href="performancerereviews.html"><i class="bi bi-circle"></i><span>Performance Reviews</span></a></li>
+          <li><a href="settings.html"><i class="bi bi-circle"></i><span>Settings</span></a></li>
+          <li><a href="analytics.html"><i class="bi bi-circle"></i><span>Analytics</span></a></li>
+          <li><a href="feedback.html"><i class="bi bi-circle"></i><span>Feedback</span></a></li>
+        </ul>
+      </li><!-- End Sports Management Nav -->
+
+      <!-- User Management -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="user-management.html">
+          <i class="bi bi-person"></i><span>User Management</span>
+        </a>
+      </li><!-- End User Management Nav -->
+
+      <!-- Content Management -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="content-management.html">
+          <i class="bi bi-box-arrow-in-right"></i><span>Content Management</span>
+        </a>
+      </li><!-- End Content Management Nav -->
+
+       <!-- Advertising Management -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="advertising-management.html">
+          <i class="bi bi-display"></i><span>Advertising Management</span>
+        </a>
+      </li><!-- End Advertising Management Nav -->
+
+      <!-- Sports Data & Statistics -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="sports-data-statistics.html">
+          <i class="bi bi-graph-up"></i><span>Sports Data and Statistics</span>
+        </a>
+      </li><!-- End Sports Data & Statistics Nav -->
+
+       <!-- Profile -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="profile.html">
+          <i class="bi bi-person"></i><span>Profile</span>
+        </a>
+      </li><!-- End Profile Nav -->
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="contact.html">
+          <i class="bi bi-envelope"></i><span>Contact</span>
+        </a>
+      </li><!-- End Contact Nav -->
+  
+      <!-- Authentication -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="register.html">
+          <i class="bi bi-card-list"></i><span>Register</span>
+        </a>
+      </li><!-- End Register Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="login.html">
+          <i class="bi bi-box-arrow-in-right"></i><span>Login</span>
+        </a>
+      </li><!-- End Login Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar -->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Content Alerts</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+          <li class="breadcrumb-item">User Management</li>
+          <li class="breadcrumb-item active">Content Alerts</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->    
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+
+              <h5 class="card-title">Dashboard Notifications</h5>
+
+              <div class="alert alert-primary bg-primary text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>New User Sign-up!</strong> A new user has registered on the platform.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success bg-success text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> Your article has been successfully published.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+
+              <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Action Required!</strong> Content violation detected, please take action.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Content violation detected—please review!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Storage nearing limit—consider clearing space!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                New platform features available—explore now!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light border-light alert-dismissible fade show" role="alert">
+                Draft saved—don't forget to submit your article.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                <strong>Action Required!</strong> Content violation detected, please take action.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Latest Updates & Announcements</h5>
+
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Breaking News: Major Sports Event</h4>
+                <p>The African Cup final is live! Stream your favorite teams as they battle for the trophy. Don't miss out on this thrilling event.</p>
+                <hr>
+                <p class="mb-0">Stay tuned for more updates on scores and highlights as they happen.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Feature Update: New Streaming Options</h4>
+                <p>We’ve added HD and 4K streaming options for all your favorite sports events. Enjoy seamless high-quality streams.</p>
+                <hr>
+                <p class="mb-0">Update your preferences to enjoy an enhanced viewing experience.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Success: Subscription Activated</h4>
+                <p>Your premium subscription is now active. Enjoy unlimited access to live matches and exclusive content.</p>
+                <hr>
+                <p class="mb-0">Maintenance will take place on Sunday from 12:00 AM to 4:00 AM.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">New Writer Access Granted</h4>
+                <p>Writers John Doe and Mary Smith have been granted access to the publishing platform. Welcome aboard!</p>
+                <hr>
+                <p class="mb-0">Admins can review their profiles and permissions in the settings panel.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Content Violation Warning</h4>
+                <p>One of the recent articles published has violated our editorial guidelines. Admins, please review and take necessary action.</p>
+                <hr>
+                <p class="mb-0">Refer to the editorial team for further instructions.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Pending Article Review</h4>
+                <p>There are currently 5 articles awaiting review. Admins and editors, please ensure all articles are reviewed before the weekend.</p>
+                <hr>
+                <p class="mb-0">Log in to the admin panel to access the pending articles.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Writer Guidelines Updated</h4>
+                <p>The editorial team has updated the writing guidelines. All writers are encouraged to review the new changes before submitting content.</p>
+                <hr>
+                <p class="mb-0">Access the new guidelines in the resources section.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Important Notifications</h5>
+
+              <div class="alert border-primary alert-dismissible fade show" role="alert">
+                New user registration completed successfully—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-secondary alert-dismissible fade show" role="alert">
+                Scheduled content review at 3:00 PM—be prepared!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-success alert-dismissible fade show" role="alert">
+                Article published successfully—well done!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-danger alert-dismissible fade show" role="alert">
+                Urgent: Content violation detected—please review!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-warning alert-dismissible fade show" role="alert">
+                Warning: Storage is running low—consider archiving old content.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-info alert-dismissible fade show" role="alert">
+                New platform update available—check out the latest features!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-light alert-dismissible fade show" role="alert">
+                Draft article saved—don't forget to submit it for review.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-dark alert-dismissible fade show" role="alert">
+                Warning: Storage is running low—consider archiving old content.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dashboard Notifications</h5>
+
+              <div class="alert alert-primary bg-primary text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>New User Sign-up!</strong> A new user has registered on the platform.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary bg-secondary text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Content Review Needed!</strong> There's a pending article for review.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success bg-success text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> Your article has been successfully published.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Action Required!</strong> Content violation detected, please take action.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                <strong>Action Required!</strong> Content violation detected, please take action.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info bg-info border-0 alert-dismissible fade show" role="alert">
+                <strong>Warning!</strong> Your storage is almost full, consider freeing up space.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light bg-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Update Available!</strong> A new platform update is available, please update.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                <strong>Draft Saved!</strong> Your draft article has been successfully saved.
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Latest Updates &amp; Announcements</h5>
+
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Breaking News: Major Sports Event</h4>
+                <p>The African Cup final is live! Stream your favorite teams as they battle for the trophy. Don't miss out on this thrilling event.</p>
+                <hr>
+                <p class="mb-0">Stay tuned for more updates on scores and highlights as they happen.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Feature Update: New Streaming Options</h4>
+                <p>We’ve added HD and 4K streaming options for all your favorite sports events. Enjoy seamless high-quality streams.</p>
+                <hr>
+                <p class="mb-0">Update your preferences to enjoy an enhanced viewing experience.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Success: Subscription Activated</h4>
+                <p>our premium subscription is now active. Enjoy unlimited access to live matches and exclusive content.</p>
+                <hr>
+                <p class="mb-0">Maintenance will take place on Sunday from 12:00 AM to 4:00 AM.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">New Writer Access Granted</h4>
+                <p>Writers John Doe and Mary Smith have been granted access to the publishing platform. Welcome aboard!</p>
+                <hr>
+                <p>class="mb-0">Admins can review their profiles and permissions in the settings panel.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Content Violation Warning</h4>
+                <p>One of the recent articles published has violated our editorial guidelines. Admins, please review and take necessary action..</p>
+                <hr>
+                <p class="mb-0">Refer to the editorial team for further instructions..</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Pending Article Review</h4>
+                <p>There are currently 5 articles awaiting review. Admins and editors, please ensure all articles are reviewed before the weekend..</p>
+                <hr>
+                <p class="mb-0">Log in to the admin panel to access the pending articles..</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light border-light alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Writer Guidelines Updated</h4>
+                <p>The editorial team has updated the writing guidelines. All writers are encouraged to review the new changes before submitting content.</p>
+                <hr>
+                <p class="mb-0">Access the new guidelines in the resources section..</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">New Feature: Dark Mode</h4>
+                <p>We’ve introduced dark mode for a more comfortable viewing experience at night. Try it out now!.</p>
+                <hr>
+                <p class="mb-0">We’ve introduced dark mode for a more comfortable viewing experience at night. Try it out now!.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+  
+
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
