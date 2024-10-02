@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+:root {
+    --big-colour:#3f5097;
+    --second-colour:#f69400;
+    --text-colour:#ffffff;
+    --text-colour2:#333333;
+    --text-colour3:#828282;
+    --about-colour:#f59E3E;
+    --seclect-coloue: #3f5c9715;
+    --log-colour:#380036 ;
+    --log-colour2:#0CBABA;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient var(--log-colour, --seclect-coloue)
+}
+
+.container{
+    max-width: 70.5rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background:var(--about-colour);
+    box-shadow: var(--text-colour2);
+}
+
+h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-colour);
+    padding-bottom: 0rem;
+    border-bottom: .1rem solid silver;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: .1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--text-colour3);
+}
+
+
+.input-box label {
+    width: 100%;
+    color: var(--text-colour);
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.input-box input {
+    height: 4rem;
+    width: 100%;
+    padding: 0 1rem 0 40px;
+    border-radius: .5rem;
+    border: .1rem solid var(--text-colour);
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 .3rem .6rem var(--text-colour3);
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forget label {
+    font-size: 14px;
+    color: #333;
+}
+
+.remember-forget a {
+    color:var(--text-colour2);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    margin: 1.5rem 0;
+}
+
+.button-container button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: block;
+    font-size: 2rem;
+    color: var(--text-colour);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background: var(--big-colour);
+}
+
+.button-container button:hover {
+    color: var(--text-colour3);
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color:var(--text-colour2);
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+.signup-button {
+    background-color: #5191d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Add these styles to your existing CSS file */

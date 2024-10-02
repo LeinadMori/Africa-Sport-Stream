@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --big-colour:#3f5097;
+    --second-colour:#f69400;
+    --text-colour:#ffffff;
+    --text-colour2:#333333;
+    --text-colour3:#828282;
+    --about-colour:#f59E3E;
+    --seclect-coloue: #3f5c9715;
+    --log-colour:#380036 ;
+    --log-colour2:#0CBABA;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient var(--log-colour, --seclect-coloue);
+}
+
+.container{
+    max-width: 70.5rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--about-colour);
+    box-shadow: var(--text-colour2);
+}
+
+h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-colour);
+    padding-bottom: 0rem;
+    border-bottom: .1rem solid silver;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: .1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-colour3);
+}
+
+.input-box label {
+    width: 100%;
+    color: var(--text-colour);
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.input-box input {
+    height: 4rem;
+    width: 100%;
+    padding: 0 1rem 0 40px;
+    border-radius: .5rem;
+    border: .1rem solid var(--text-colour);
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 .3rem .6rem var(--text-colour3);
+}
+
+.gender-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .6rem 0;
+    gap: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+.gender-category input[type="radio"] {
+    display: none;
+}
+
+.gender-category label {
+    font-size: 1rem;
+    color: var(--text-colour);
+    font-weight: bold;
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+
+.gender-category label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--text-colour);
+    background-color: transparent;
+}
+
+.gender-category input[type="radio"]:checked + label::before {
+    background-color: var(--big-colour);
+    border-color: var(--big-colour);
+}
+
+.gender-category label:hover::before {
+    border-color: var(--second-colour);
+}
+
+.gender-category input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--text-colour);
+    border-radius: 50%;
+}
+
+.button-container {
+    margin: 1.5rem 0;
+}
+
+.button-container button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: block;
+    font-size: 2rem;
+    color: var(--text-colour);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background: var(--big-colour);
+}
+
+.button-container button:hover {
+    color: var(--text-colour3);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: var(--text-colour2);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

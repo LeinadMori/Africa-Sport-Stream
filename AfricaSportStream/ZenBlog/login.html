@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login</title>
+    <link rel="icon" type="image/png" href="assets/img/logo1.png">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>Member Login</h2>
+        <form id="login-form">
+            <div class="content">
+                <div class="input-box">
+                    <label for="email">Enter your email</label>
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <input type="email" id="email" aria-label="Email" required>
+                </div>
+    
+                <div class="input-box">
+                    <label for="password">Enter your password</label>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" id="password" aria-label="Password" required>
+                </div>
+            </div>
+    
+            <div class="remember-forget">
+                <label><input type="checkbox" aria-label="Remember me"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+    
+            <div class="button-container">
+                <button type="submit" id="signInButton">Log in</button>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html" class="signup-link">Signup now!</a></p>
+            </div>
+                        
+        </form>
+    </div>  
+    
+    <script src="js/auth.js"></script> <!-- Include auth.js for authentication logic -->
+</body>
+</html>
