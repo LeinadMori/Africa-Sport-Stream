@@ -216,7 +216,7 @@ h6 {
 
 /* theme */
 .theme-toggle {
-  background-color: #007bff; /* Example color */
+  background-color: #84e208; /* Example color */
   color: white;
   border: none;
   padding: 8px 10px;
@@ -226,7 +226,7 @@ h6 {
   font-size: 11px;
 }
 .theme-toggle:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #243d02; /* Darker shade on hover */
 }
 
 /*--------------------------------------------------------------
@@ -1833,6 +1833,7 @@ section,
 
 .blog-posts p {
   margin-top: 20px;
+  color: #333;
 }
 
 .blog-posts hr {
